@@ -420,9 +420,9 @@ input[type="checkbox"] {
     transition: 0.5s;
     -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
-    background: #e52e71;
+    background: #ffffff;
     background-image: -webkit-gradient(linear, right bottom, left top, from(#e52e71), to(#ff8a00));
-    background-image: linear-gradient(to bottom, #e52e71, #ff8a00);
+    background-image: linear-gradient(to bottom, #000000, #000000);
 }
 @media screen and (max-width: 1200px) {
     #betty-aside {
@@ -466,7 +466,7 @@ input[type="checkbox"] {
     line-height: 1.75em;
 }
 #betty-aside .betty-logo img {
-    width: 40px;
+    width: 10rem;
     height: auto;
     margin-bottom: 0px;
 }
@@ -984,7 +984,7 @@ body.offcanvas .betty-nav-toggle {
 .betty-heading {
     margin-bottom: 0px;
     font-size: 30px;
-    color: #e52e71;
+    color: #000;
 }
 .betty-heading span {
     display: block;
@@ -2037,7 +2037,7 @@ ol.comment-list li .children li {
 /* ======= Footer Style ======= */
 #betty-footer2 {
     padding: 90px;
-    background: #e52e71;
+    background: #71660c;
 }
 #betty-footer2 h2 {
     font-weight: 700;
@@ -2068,12 +2068,12 @@ ol.comment-list li .children li {
     width: 100%;
 }
 #betty-footer2 .betty-logo img {
-    max-width: 40px;
+    max-width: 10rem;
 }
 @media screen and (max-width: 768px) {
     #betty-footer2 {
         padding: 100px 30px 80px 30px;
-        background: #e52e71;
+        background: #71660c;
         text-align: center;
     }
 }
@@ -2148,3 +2148,28 @@ ol.comment-list li .children li {
     outline: none;
     color: #fff;
 }
+
+/* submenu css */
+
+#betty-main-menu li:hover .submenu {
+    display: block !important;
+    max-height: 200px;
+  }
+
+.submenu a {
+    background-color: #999;
+  }
+  
+  /* hover behaviour for links inside .submenu */
+  .submenu a:hover {
+    background-color: #666;
+  }
+  
+  /* this is the initial state of all submenus.
+    we set it to max-height: 0, and hide the overflowed content.
+  */
+  .submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+  }
