@@ -422,7 +422,7 @@ input[type="checkbox"] {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
     background: #ffffff;
     background-image: -webkit-gradient(linear, right bottom, left top, from(#e52e71), to(#ff8a00));
-    background-image: linear-gradient(to bottom, #000000, #000000);
+    background-image: linear-gradient(to bottom, #b9272794, #000000);
 }
 @media screen and (max-width: 1200px) {
     #betty-aside {
@@ -1974,6 +1974,9 @@ ol.comment-list li .children li {
     width: 100%;
     height: 570px;
 }
+.mainMap{
+    width: 100%;
+}
 /* Form */
 .form-control {
     -webkit-appearance: none;
@@ -2036,8 +2039,8 @@ ol.comment-list li .children li {
 
 /* ======= Footer Style ======= */
 #betty-footer2 {
-    padding: 90px;
-    background: #71660c;
+    padding: 1rem;
+    background: #5d0707b8;
 }
 #betty-footer2 h2 {
     font-weight: 700;
@@ -2157,7 +2160,7 @@ ol.comment-list li .children li {
   }
 
 .submenu a {
-    background-color: #999;
+    background-color: #d89c9c;
   }
   
   /* hover behaviour for links inside .submenu */
