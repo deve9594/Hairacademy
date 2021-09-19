@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>LXE - Look Explain's Everything</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+     <!-- <link rel="icon" type="image/png" href="images/favicon.png" /> -->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/et-lineicons.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -24,11 +24,23 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144098545-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'UA-144098545-1');
+        gtag('config', 'UA-144098545-1');
+        
+        function contactForm(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(xhttp.responseText);
+                }
+            };
+            xhttp.open("GET", "contact_form.php", true);
+            xhttp.send();
+        }
+
     </script>
 </head>
 
@@ -97,7 +109,7 @@
                         </div>
                         <!-- Contact Form -->
                         <div class="col-md-7">
-                            <form action="contact_form.php" method="post" class="row">
+                            <form  class="row" action="contact_form.php" method="POST">
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <input type="text" name="name" class="form-control" placeholder="Name" required> </div>

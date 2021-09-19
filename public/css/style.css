@@ -123,13 +123,13 @@ input[type="password"],
 input[type="email"],
 input[type="text"],
 input[type="file"],
-textarea {
+textarea,select {
     max-width: 100%;
     margin-bottom: 15px;
     border: none;
     padding: 7px 15px;
     height: auto;
-    background-color: #fff;
+    /* background-color: #fff; */
     -webkit-box-shadow: none;
     box-shadow: none;
     display: block;
@@ -371,6 +371,14 @@ input[type="checkbox"] {
     display: block;
     background-position: center;
 }
+.betty-contact-form-all-pages {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    clear: both;
+    width: 100%;
+    display: block;
+    background-position: center;
+}
 .betty-makeup,
 .betty-team,
 .betty-home-blog {
@@ -408,7 +416,8 @@ input[type="checkbox"] {
     position: relative;
 }
 #betty-aside {
-    padding: 60px 60px 15px 60px;
+    padding: 1.5rem;
+    padding-top: 1rem;
     width: 25%;
     position: fixed;
     bottom: 0;
@@ -418,11 +427,10 @@ input[type="checkbox"] {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
-    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
-    background: #ffffff;
-    background-image: -webkit-gradient(linear, right bottom, left top, from(#e52e71), to(#ff8a00));
-    background-image: linear-gradient(to bottom, #b9272794, #000000);
+    -webkit-box-shadow: 0 0 30px rgb(0 0 0 / 5%);
+    box-shadow: 0 0 30px rgb(0 0 0 / 5%);
+    background: #191816;
+    background-image: #191816;
 }
 @media screen and (max-width: 1200px) {
     #betty-aside {
@@ -466,7 +474,7 @@ input[type="checkbox"] {
     line-height: 1.75em;
 }
 #betty-aside .betty-logo img {
-    width: 10rem;
+    width: 50%;
     height: auto;
     margin-bottom: 0px;
 }
@@ -886,7 +894,7 @@ input[type="checkbox"] {
 #betty-hero .flexslider .flex-control-nav li a.flex-active {
     cursor: pointer;
     background: transparent;
-    border: 2px solid #e52e71;
+    border: 2px solid black;
 }
 #betty-hero .flexslider .flex-direction-nav {
     display: none;
@@ -951,11 +959,11 @@ input[type="checkbox"] {
 #betty-hero .flexslider .slider-text > .slider-text-inner p {
     margin-bottom: 0;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     #betty-hero .flexslider .slider-text > .slider-text-inner .btn {
-/*        width: 100%;*/
+       width: 100%;
     }
-}
+} */
 body.offcanvas {
     overflow-x: hidden;
 }
@@ -1209,7 +1217,7 @@ body.offcanvas .betty-nav-toggle {
     font-weight: 400;
     display: inline-block;
 }
-.team .info p {}
+/* .team .info p {} */
 .team .info .social {
     margin-top: 10px;
 }
@@ -2040,7 +2048,7 @@ ol.comment-list li .children li {
 /* ======= Footer Style ======= */
 #betty-footer2 {
     padding: 1rem;
-    background: #5d0707b8;
+    background: #191816;
 }
 #betty-footer2 h2 {
     font-weight: 700;
@@ -2176,3 +2184,82 @@ ol.comment-list li .children li {
     max-height: 0;
     -webkit-transition: all 0.5s ease-out;
   }
+
+  /* contact form all pages */
+
+.contact-form-all-pages .section-head {
+    text-align: left;
+    margin-bottom: 0;
+}
+.contact-form-all-pages .section-head p {
+    color: #666;
+}
+.contact-form-all-pages .section-head h4 {
+    padding-bottom: 0;
+    color: #e52e71;
+    font-size: 30px;
+    line-height: 1.2em;
+}
+.contact-form-all-pages .section-head h4:after {
+    display: none;
+}
+.contact-form-all-pages .item-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.contact-form-all-pages .item-box .quote {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 100px;
+    margin: 0 auto 30px;
+    opacity: .1;
+}
+.contact-form-all-pages .item-box p {
+    font-size: 16px;
+    color: #666;
+}
+.contact-form-all-pages .item-box .info {
+    text-align: left;
+    margin: 30px 0 15px 0;
+}
+.contact-form-all-pages .item-box .info .author-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+}
+.contact-form-all-pages .item-box .info .cont {
+    margin-left: 60px;
+}
+.contact-form-all-pages .item-box .info h6 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    line-height: 1em;
+}
+.contact-form-all-pages .item-box .info span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-right: 5px;
+}
+.contact-form-all-pages .item-box .info .rate {
+    float: right;
+}
+.contact-form-all-pages .item-box .info i {
+    color: #e52e71;
+    font-size: 10px;
+}
+.contact-form-all-pages .owl-theme .owl-nav {
+    position: absolute;
+    left: -49%;
+    bottom: 50px;
+    margin-top: 0;
+}
